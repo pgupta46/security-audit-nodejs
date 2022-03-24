@@ -8,6 +8,12 @@
 	"major": {
 		"automerge": true
 	},
+	"minor": {
+		"automerge": true
+	},
+	"patch": {
+		"automerge": true
+	},
 	"postUpdateOptions": ["npmDedupe"],
 	"packageRules":[
     {
