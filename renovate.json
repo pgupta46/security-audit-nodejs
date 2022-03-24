@@ -3,7 +3,7 @@
 	"extends": ["config:base"],
 	"automerge": true,
 	"prConcurrentLimit": 20,
-	"prCreation": "not-pending",
+	"prCreation": "immediate",
 	"semanticCommits": "enabled",
 	"major": {
 		"automerge": false
