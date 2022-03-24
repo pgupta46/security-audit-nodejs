@@ -6,7 +6,7 @@
 	"prCreation": "immediate",
 	"semanticCommits": "enabled",
 	"major": {
-		"automerge": false
+		"automerge": true
 	},
 	"postUpdateOptions": ["npmDedupe"],
 	"packageRules": [{
