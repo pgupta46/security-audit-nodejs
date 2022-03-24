@@ -27,7 +27,7 @@
     "minimist": "1.2.0",
     "nsp": "3.2.1",
     "resolve-bin": "0.4.0",
-    "retire": "1.6.0",
+    "retire": "1.6.3",
     "wanted-node-version": "1.0.1"
   },
   "devDependencies": {
