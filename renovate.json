@@ -5,6 +5,7 @@
 	"prConcurrentLimit": 20,
 	"prCreation": "immediate",
 	"semanticCommits": "enabled",
+	"group":"all",
 	"major": {
 		"automerge": true
 	},
