@@ -10,15 +10,17 @@
 		"automerge": true
 	},
 	"postUpdateOptions": ["npmDedupe"],
-	"packageRules": [{
-			"matchDepTypes": ["devDependencies"],
-			"matchUpdateTypes": ["patch", "minor"],
-			"groupName": "Non-Major Dependencies"
-		},
-		{
-			"matchPackagePatterns": ["angular"],
-			"matchPaths": ["package.json"],
-			"matchUpdateTypes": ["major"]
-		}
-	]
+	"packageRules":[
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    }
+  ]
 }
