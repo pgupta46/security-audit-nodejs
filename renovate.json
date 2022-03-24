@@ -1,0 +1,23 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:base"],
+	"automerge": true,
+	"prConcurrentLimit": 20,
+	"prCreation": "not-pending",
+	"semanticCommits": "enabled",
+	"major": {
+		"automerge": false
+	},
+	"postUpdateOptions": ["npmDedupe"],
+	"packageRules": [{
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"groupName": "Non-Major Dependencies"
+		},
+		{
+			"matchPackagePatterns": ["angular"],
+			"matchPaths": ["package.json"],
+			"matchUpdateTypes": ["major"]
+		}
+	]
+}
